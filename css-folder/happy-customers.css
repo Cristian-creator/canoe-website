@@ -22,7 +22,7 @@
 
 
 .landscape-and-about {
-    background-image: url(images-canoe/landscape4.webp);
+    background-image: url("/images-canoe/landscape4.webp");
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
