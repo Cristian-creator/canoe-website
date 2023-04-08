@@ -22,7 +22,7 @@
 
 
 .landscape-and-about {
-    background-image: url(/images-canoe/landscape4.webp);
+    background-image: url(images-canoe/landscape4.webp);
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +57,7 @@
 /*Happy customers */
 
 .happy-customers {
-    background-image: url(/images-canoe/romania.webp);
+    background-image: url(images-canoe/romania.webp);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 1370px;
