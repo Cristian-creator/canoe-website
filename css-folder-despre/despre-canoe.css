@@ -1,0 +1,127 @@
+.site-header.despre {
+    background-image: none;
+    height: 0px;
+}
+
+.site-logo img {
+    width: 70px;
+    height: 57px;
+}
+
+.despre-img {
+    background-image: url(/images-canoe/desprenoi-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.despre-text {
+    padding: 15px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.despre-img h1 {
+    color: var(--primary-color);
+    font-size: 35px;
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.despre-img p {
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.poveste-container {
+    padding: 5% 10%;
+}
+
+.poveste-container h1 {
+    text-align: center;
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10%;
+}
+
+.poveste-container p {
+    font-size: 18px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    margin: 0px 0px 16px;
+    color: var(--light-gray);
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media(min-width: 560px) {
+    .despre-img {
+        height: 300px;
+    }
+
+    .site-logo img {
+        width: 100%;
+        height: 75px;
+    }
+
+    .despre-img h1,
+    .poveste-container h1 {
+        font-size: 45px;
+    }
+    
+    .despre-img p {
+        color: var(--primary-color);
+        font-size: 32px;
+    }
+}
+
+@media(min-width: 760px) {
+    .despre-img {
+        height: 320px;
+    }
+}
+
+@media(min-width: 990px) {
+    .despre-img {
+        height: 400px;
+    }
+
+    .despre-img h1,
+    .poveste-container h1 {
+        font-size: 70px;
+    }
+
+    .poveste-container h1 {
+        margin-bottom: 3%;
+    }
+
+    .despre-img p {
+        font-size: 40px;
+    }
+
+    .poveste-container p {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 1200px) {
+    nav {
+        padding: 15px;
+    }
+
+    .despre-img {
+        height: 45vh;
+    }
+
+    .site-logo img {
+        width: 130px;
+        height: 97.5px;
+    }
+}

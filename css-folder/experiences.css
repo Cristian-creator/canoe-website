@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #ffff;
+    --secondary-color: black;
+    --light-blue: #65c0ba;
+    --light-gray: #6c757d;
+    --border-color: #e6e6e6;
+    --dark-gray: rgba(0, 0, 0, 0.6);
+    --bg-color: #fafafa;
+    --bg-border: #e0e0e0;
+    --meta-color: #CED4DA;
+}
+
+.experiences {
+    background: var(--bg-color);
+    border-top: 1px solid var(--bg-border);
+    padding: 54px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.experiences-text {
+    text-align: center;
+    padding: 0px 15px;
+    max-width: 500px;
+}
+
+.experiences-text h1 {
+    font-size: 40px;
+    font-family: 'Abril FatFace', times, serif;
+    margin: 0px 0px 8px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.experiences-text p {
+    font-size: 16px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    margin: 0px 0px 16px;
+    color: var(--light-gray);
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 0px 0px 16px;
+}
+
+.experiences-container {
+    text-align: center;
+    padding-top: 48px;
+    margin: 0px 15px;
+    max-width: 500px;
+}
+
+.experiences-container img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.experiences-container div {
+    margin-bottom: 30px;
+}
+
+.experiences-container h3 {
+    font-size: 28px;
+    font-family: 'Abril FatFace', times, serif;
+    margin: 0px 0px 8px;
+    font-weight: 500;
+}
+
+.experiences-container p {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    color: var(--light-gray);
+    margin: 0px 0px 16px;
+    line-height: 1.8;
+}
+
+/* Media Queries */
+
+@media(min-width: 765px) {
+    .experiences-text {
+        max-width: 450px;
+    }
+
+    .experiences-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        max-width: none;
+    }
+
+    .experiences-container div {
+        width: 330px;
+    }
+
+    .experiences-container img {
+        height: 300px;
+    }
+}
+
+@media(min-width: 992px) {
+
+    .experiences {
+        padding: 126px 0px;
+    }
+
+    .experiences-text {
+        max-width: 610px;
+        padding-bottom: 10px;
+    }
+
+    .experiences-text h1 {
+        font-size: 70px;
+        font-family: 'Abril FatFace', times, serif;
+        margin: 0px 0px 40px;
+    }
+
+    .experiences-text p {
+        font-size: 20px;
+        font-family: 'Mukta Mahee', arial, sans-serif;
+        margin: 0px 0px 16px;
+    }
+
+    .experiences-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+    }
+
+    .experiences-container div {
+        margin-bottom: 0px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .experiences-text {
+        max-width: 910px;
+    }
+
+    .experiences-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .experiences-container div {
+        max-width: 350px;
+    }
+}

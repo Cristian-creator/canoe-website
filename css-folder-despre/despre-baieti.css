@@ -1,0 +1,105 @@
+.despre-echipa {
+    padding: 0% 10%;
+}
+
+.despre-echipa h1 {
+    text-align: center;
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10%;
+}
+
+.echipa-fotografii {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.mircea-echipa,
+.stefan-echipa {
+    width: 100%;
+}
+
+.mircea-echipa img,
+.stefan-echipa img{
+    width: 300px;
+    height: 280px;
+    margin-bottom: 30px;
+}
+
+.stefan-echipa {
+    margin-top: 35px;
+}
+
+.echipa-fotografii p {
+    font-size: 18px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    color: var(--light-gray);
+    line-height: 1.8;
+    font-weight: 200;
+}
+
+/* Media Queries */
+
+@media(min-width: 560px) {
+    .despre-echipa h1 {
+        font-size: 45px;
+    }
+}
+
+@media(min-width: 760px) {
+    .despre-echipa h1{
+        font-size: 70px;
+    } 
+
+    .echipa-fotografii {
+        flex-direction: row;
+        max-width: 820px;
+        margin: 0 auto 10%;
+        align-items: flex-start;
+    }
+
+    .mircea-echipa {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .mircea-echipa img {
+        width: 272px;
+    }
+
+    .stefan-echipa {
+        width: 50%;
+        margin-top: 0px;
+        padding: 20px;
+    }
+
+    .stefan-echipa img {
+        width: 272px;
+    }
+}
+
+@media(min-width: 990px) {
+    .echipa-fotografii {
+        max-width: 100%;
+    }
+
+    .echipa-fotografii p {
+        font-size: 20px;
+    }
+
+    .stefan-echipa {
+        padding-left: 60px;
+    }
+
+    .mircea-echipa {
+        padding-right: 60px;
+    }
+}
+@media(min-width: 1200px) {
+    .despre-echipa h1 {
+        margin-bottom: 3%;
+    }
+}

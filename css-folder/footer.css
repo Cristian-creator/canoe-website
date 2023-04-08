@@ -1,0 +1,260 @@
+:root {
+    --footer-bg: #1a1a1a;
+    --footer-a-color: #ffffffb3;
+    --copyright-color: #ffffff80;
+}
+
+.iframe-container {
+    max-width: 100%;
+}
+
+.iframe-container iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 54px 0px;
+}
+
+.quick-links,
+.support,
+.contact-info,
+.subscription {
+    padding: 0px 15px 72px;
+}
+
+.quick-links h3,
+.support h3,
+.contact-info h3,
+.subscription h3 {
+    margin: 0px 0px 20px;
+    font-size: 18px;
+    font-family: 'Abril Fatface', times, serif;
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.footer-container li a {
+    color: var(--footer-a-color);
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 200;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p .italic {
+    font-style: italic;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.contact-info span {
+    display: block;
+    font-size: 18px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 200;
+    color: var(--footer-a-color);
+}
+
+.contact-info p {
+    margin-bottom: 16px;
+}
+
+.subscription p {
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 200;
+    color: var(--footer-a-color);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+
+/* Subscription input */
+
+.footer-newsletter .form-group {
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.footer-newsletter .form-control {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.form-control {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+.footer-newsletter button {
+    background: none;
+    color: var(--primary-color);
+    position: absolute;
+    right: 36px;
+    top: 16px;
+}
+
+
+/* Copyright section */
+
+.copyrights {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyrights p {
+    padding: 48px 15px 0px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    color: var(--copyright-color);
+}
+
+.footer-brands {
+    margin-bottom: 16px;
+    padding: 0px 15px;
+    display: block;
+}
+
+.footer-brands a {
+    color: rgba(255, 255, 255, 0.7);;
+    padding: 10px;
+}
+
+.copyrights {
+    max-width: 510px;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+
+@media(min-width: 560px) {
+    .footer-container {
+        max-width: 510px;
+        margin: 0 auto;
+    }
+
+    p .italic {
+        color: var(--primary-color);
+    }
+}
+
+
+@media(min-width: 760px) {
+    footer {
+        width: 100%;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+
+    .quick-links,
+    .support,
+    .contact-info,
+    .subscription {
+        width: 150px;
+        padding: 0px 15px;
+        margin-bottom: 72px;
+    }
+
+    p .italic {
+        color: var(--primary-color);
+    }
+
+    .contact-info {
+        padding-right: 48px;
+    }
+
+    li a {
+       color: rgba(255, 255, 255, 0.7); 
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 6px 12px
+    }
+
+    .footer-newsletter button {
+        right: 26px;
+        top: 21px;
+    }
+
+    .copyrights {
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 990px) {
+    footer {
+        padding: 60px 0px;
+        width: 100%;
+    }
+
+    .footer-container {
+        max-width: 930px;
+        margin: 0 auto;
+    }
+
+    .quick-links,
+    .support,
+    .contact-info,
+    .subscription {
+        width: 210px;
+    }
+
+    .contact-info span {
+        color: var(--copyright-color);
+    }
+
+    p .italic {
+        color: var(--primary-color);
+    }
+
+    .copyrights {
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px) {
+    footer {
+        width: 100%;
+    }
+
+    .footer-container {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    .quick-links,
+    .support,
+    .contact-info,
+    .subscription {
+        width: 255px;
+    }
+
+    .copyrights {
+        max-width: 1140px;
+    }
+}

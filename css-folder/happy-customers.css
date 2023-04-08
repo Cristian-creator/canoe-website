@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #ffff;
+    --secondary-color: black;
+    --light-blue: #65c0ba;
+    --light-gray: #6c757d;
+    --border-color: #e6e6e6;
+    --dark-gray: rgba(0,0,0,0.6);
+    --bg-color: #fafafa;
+    --bg-border: #e0e0e0;
+    --meta-color: #CED4DA;
+    --customized-color: #4e4343;
+}
+
+/* Landscape and About */
+
+
+.landscape-and-about {
+    background-image: url(/images-canoe/landscape4.webp);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.rounded-img.testimonial {
+    margin: 0 auto;
+}
+
+.testimonial.landscape {
+    text-align: center;
+}
+
+.testimonial.landscape p {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: sans-serif;
+    max-width: 700px;
+}
+
+.testimonial.landscape em {
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+/*Happy customers */
+
+.happy-customers {
+    background-image: url(/images-canoe/romania.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1370px;
+    backface-visibility: var(--meta-color);
+    width: 100%;
+    padding: 54px 0px;
+    margin: 0 auto;
+}
+
+.camera-pic,
+.plant-pic,
+.thermo-pic {
+    display: none;
+}
+
+.testimonial-container {
+    padding: 0px 15px;
+}
+
+.happy-customers h1 {
+    font-size: 40px;
+    font-family: 'Abril Fatface', times, serif;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.rounded-img {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 24px 0px 16px;
+}
+
+.rounded-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-size: 20px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    margin: 0px 0px 16px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    font-style: italic;
+    text-align: left;
+}
+
+.testimonial em {
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    color: var(--light-gray);
+    text-align: left;
+    font-style: italic;
+}
+
+/* Media Queries */
+
+@media(min-width: 575px) {
+    .happy-customers h1 {
+        width: 510px;
+    }
+
+    .testimonial-container {
+        width: 510px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 765px) {
+    .happy-customers {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .testimonial-container {
+        display: flex;
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .testimonial-1,
+    .testimonial-2,
+    .testimonial-3 {
+        padding: 0px 15px;
+        width: 290px;
+    }
+}
+
+@media(min-width: 990px) {
+    .happy-customers {
+        padding: 126px 0px;
+    }
+
+    .testimonial-container {
+        width: 930px;
+        margin: 0 auto;
+    }
+
+    .happy-customers h1 {
+        font-size: 70px;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .happy-customers {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .testimonial-container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    .testimonial-1,
+    .testimonial-2,
+    .testimonial-3 {
+        width: 350px;
+    }
+
+    .landscape-and-about {
+        height: 400px;
+    }
+}
+
+@media(min-width: 1700px) {
+    .happy-customers {
+        position: relative;
+        height: 58vh;
+    }
+
+    .camera-pic,
+    .plant-pic,
+    .thermo-pic {
+        display: block;
+        position: absolute;
+    }
+
+    .camera-pic {
+        left: 40px;
+        top: 25%;
+    }
+
+    .plant-pic {
+        right: 160px;
+        top: 50px;
+    }
+
+    .thermo-pic {
+        right: 0;
+        bottom: 0;
+    }
+
+    .testimonial.landscape p {
+        max-width: 900px;
+    }
+}

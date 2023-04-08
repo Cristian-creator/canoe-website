@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #ffff;
+    --secondary-color: black;
+    --light-blue: #65c0ba;
+    --light-gray: #6c757d;
+    --border-color: #e6e6e6;
+    --dark-gray: rgba(0, 0, 0, 0.6);
+    --meta-color: #CED4DA;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+.site-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images-canoe/home-6.webp);
+    height: 100vh;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.site-logo img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.hamburger {
+    padding: 0px 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 30px);
+    transform: translate(-50%, -50%);
+}
+
+
+.header-content > h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-family: "Abril FatFace", times, serif;
+    padding: 24px 0px 24px 0px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.header-content-text {
+    padding: 0px 15px;
+}
+
+.header-content p {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-family: "Mukta Mahee", arian, sans-serif;
+    text-align: center;
+    padding: 0px 0px 48px;
+    animation: fadeInUp 1s ease-in-out 0.2s;
+    animation-fill-mode: both;
+}
+
+.header-content-link {
+    width: 100%;
+}
+
+.header-content-link button {
+    width: 100%;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: var(--primary-color);
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    transition: linear 0.5s;
+    animation: fadeInUp 1s ease-in-out 0.4s;
+    animation-fill-mode: both;
+}
+
+.header-content-link button:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+
+/* Hamburger menu */
+.hamburger {
+    cursor: pointer;
+    width: 36px;
+    z-index: 4;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    height: 2px;
+    background: var(--primary-color);
+    transition: all 0.25s linear;
+}
+
+.hamburger-middle,
+.hamburger-bottom {
+    margin-top: 7px;
+}
+
+/* Mobile menu */
+
+.mobile-main-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-main-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-main-menu ul li {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: "April FatFace", times, serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#selected-nav-item {
+    color: var(--light-blue);
+}
+
+.mobile-main-menu ul li a {
+    color: var(--secondary-color);
+}
+
+
+/* Transition Hamburger to X when open */
+.open .hamburger-top {
+    transform-origin: bottom center;
+    transform: rotate(135deg) translateY(-10px);
+}
+
+.open .hamburger-middle {
+    transform: translateY(-90deg);
+    opacity: 0;
+    transform: translateX(-35px);
+}
+
+.open .hamburger-bottom {
+    transform-origin: top center;
+    transform: rotate(-135deg) translateY(10px);
+}
+
+/* Stop body scroll */
+.stop-scrolling {
+    overflow: hidden;
+}
+
+/* Next section scroll */
+
+.next-section-scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeInUpScrollButton ease-in-out 0.8s;
+}
+
+.next-section-scroll a {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.next-section-scroll span {
+    transform: rotate(90deg);
+}
+
+/* Welcome section */
+
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.welcome-section {
+    width: 100%;
+    padding: 54px 0px;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s;
+}
+
+.img-box {
+    margin: 0px 0px 24px;
+    padding: 0px 15px;
+}
+
+.img-box img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    padding: 0px 15px;
+}
+
+.text-content h1 {
+    font-size: 32px;
+    font-family: 'Abril FatFace', times, serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0px 0px 24px;
+}
+
+.text-content p {
+    font-size: 18px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    color: var(--light-gray);
+}
+
+.text-content :nth-child(2),
+.text-content :last-child {
+    margin: 0px 0px 16px;
+}
+
+.welcome-section-button {
+    color: var(--light-blue);
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 24px 15px 0px;
+    margin: 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.video-play-item {
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Short film video */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: var(--dark-gray);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    background: var(--primary-color);
+    max-width: 15 00px;
+}   
+
+
+.white-border-video {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 54%;
+}
+
+
+.closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    color: var(--light-gray);
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive iframe */
+
+.white-border-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Animations */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpScrollButton {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) translate(-50%, -50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Media Queries */
+
+@media(min-width: 575px) {
+
+    .header-content-link {
+        width: auto;
+    }
+
+    .header-content-link button {
+        padding: 16px 30px;
+        font-family: "Mukta Mahee", arial, sans-serif;
+        letter-spacing: 0.1rem;
+    }
+
+    .welcome-section {
+        margin: 0 auto;
+        padding: 0px 15px;
+        max-width: 540px;
+        padding-top: 54px;
+    }
+
+    .img-box {
+        padding-bottom: 24px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .welcome-section {
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 990px) {
+    .header-content h1 {
+        font-size: 70px;
+        font-family: "Abril FatFace", times, serif;
+        line-height: 1;
+        font-weight: bold;
+    }
+
+    .header-content p {
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+
+    .welcome-section {
+        margin: 0 auto;
+        display: flex;
+        max-width: 960px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-box {
+        min-width: 45%;
+    }
+
+    .welcome-section-content {
+        padding: 0px 15px 0px 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 72px 0px;
+    }
+
+    .welcome-section {
+        max-width: 1140px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .site-logo img {
+        width: 130px;
+    }
+
+    nav {
+        padding: 60px 15px;
+    }
+
+    .header-content-link button {
+        font-size: 20px;
+    }
+}

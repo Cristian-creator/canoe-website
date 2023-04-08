@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+@import url(./index.css);
+
+:root {
+    --primary-color: #ffff;
+    --secondary-color: black;
+    --light-blue: #65c0ba;
+    --light-gray: #6c757d;
+    --border-color: #e6e6e6;
+    --dark-gray: rgba(0,0,0,0.6);
+    --bg-color: #fafafa;
+    --bg-border: #e0e0e0;
+    --meta-color: #CED4DA;
+    --customized-color: #4e4343;
+    --soft-gray: #CCCCCC;
+}
+
+.top-destination {
+    padding: 54px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-destination-text {
+    text-align: center;
+    margin-bottom: 48px;
+    max-width: 510px;
+}
+
+.top-destination-text h1 {
+    font-size: 32px;
+    font-family: 'Abril Fatface', times, serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0px 0px 8px;
+}
+
+.top-destination-text p {
+    font-size: 16px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: var(--light-gray);
+    line-height: 1.8;
+}
+
+.food-review img,
+.spa-review img,
+.hotel-review img,
+.mountain-review img {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 510px;
+}
+
+.food-review a,
+.spa-review a,
+.hotel-review a,
+.mountain-review a {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-family: 'Abril Fatface', times, serif;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 510px;
+}
+
+.stars-review-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    max-width: 510px;
+}
+
+.stars-review ion-icon{
+    color: var(--light-blue);
+}
+
+.stars-review-content span {
+    color: var(--soft-gray);
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Mukta Mahee', arial, sans-serif;
+    font-weight: 200;
+}
+
+/* Media Queries */
+
+@media(min-width: 770px) {
+    .top-destination-text {
+        max-width: 450px;
+    }
+    
+    .top-destination-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .food-review img,
+    .spa-review img,
+    .hotel-review img,
+    .mountain-review img{
+        width: 330px;
+    }
+
+    .food-review,
+    .spa-review,
+    .hotel-review,
+    .mountain-review {
+        margin-bottom: 16px;
+        padding: 0px 15px;
+    }
+}
+
+@media(min-width: 990px){
+    .top-destination {
+        padding: 54px 0px;
+    }
+
+    .top-destination-text {
+        max-width: 640px;
+        padding: 0px 15px;
+    }
+
+    .food-review img,
+    .spa-review img,
+    .hotel-review img,
+    .mountain-review img{
+        width: 210px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .top-destination {
+        padding: 126px 0px;
+    }
+
+    .top-destination-text {
+        max-width: 730px;
+        padding: 0px 15px;
+    }
+
+    .top-destination-text p {
+        font-size: 20px;
+        font-family: 'Mukta Mahee', arial, sans-serif;
+        font-weight: 300;
+        line-height: 1.8;
+    }
+
+    .food-review img,
+    .spa-review img,
+    .hotel-review img,
+    .mountain-review img{
+        width: 255px;
+    }
+}
