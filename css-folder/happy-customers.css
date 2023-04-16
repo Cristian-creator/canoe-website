@@ -57,7 +57,7 @@
 /*Happy customers */
 
 .happy-customers {
-    background-image: url(images-canoe/romania.webp);
+    background-image: url("../images-canoe/romania.webp");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 1370px;

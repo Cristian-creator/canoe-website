@@ -58,34 +58,34 @@
 }
 
 .owl-carousel .div-img-1 {
-    background-image: url(images-canoe/carousel-8\(1\).webp);
+    background-image: url("../images-canoe/carousel-8\(1\).webp");
     background-position: bottom;
 }
 
 .owl-carousel .div-img-2 {
-    background-image: url(images-canoe/carousel-1.webp);
+    background-image: url("../images-canoe/carousel-1.webp");
 }
 
 .owl-carousel .div-img-3 {
-    background-image: url(images-canoe/carousel-2.webp);
+    background-image: url("../images-canoe/carousel-2.webp");
 }
 
 .owl-carousel .div-img-4 {
-    background-image: url(images-canoe/dragon-boat-poza.webp);
+    background-image: url("../images-canoe/dragon-boat-poza.webp");
     background-position: bottom;
 }
 
 .owl-carousel .div-img-5 {
-    background-image: url(images-canoe/carousel-9.webp);
+    background-image: url("../images-canoe/carousel-9.webp");
     background-position: bottom;
 }
 
 .owl-carousel .div-img-6 {
-    background-image: url(images-canoe/paddle-up-poza-2.webp);
+    background-image: url("../images-canoe/paddle-up-poza-2.webp");
 }
 
 .owl-carousel .div-img-7 {
-    background-image: url(images-canoe/dragooon-boat.webp);
+    background-image: url("../images-canoe/dragooon-boat.webp");
 }
 
 .owl-carousel .owl-dots .owl-dot {
