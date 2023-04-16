@@ -9,7 +9,7 @@
 }
 
 .despre-img {
-    background-image: url("/images-canoe/desprenoi-1.png");
+    background-image: url("../images-canoe/desprenoi-1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
