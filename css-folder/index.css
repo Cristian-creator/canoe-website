@@ -34,7 +34,8 @@ body {
 }
 
 .site-logo img {
-    width: 100px;
+    width: 70px;
+    height: 57px;
 }
 
 nav {
@@ -198,10 +199,8 @@ nav {
 /* Next section scroll */
 
 .next-section-scroll {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;  
     font-size: 12px;
     text-transform: uppercase;
     text-align: center;
@@ -213,9 +212,6 @@ nav {
     cursor: pointer;
 }
 
-.next-section-scroll span {
-    transform: rotate(90deg);
-}
 
 /* Welcome section */
 
@@ -418,6 +414,11 @@ nav {
     .img-box {
         padding-bottom: 24px;
     }
+
+    .site-logo img {
+        width: 100px;
+        height: 75px;
+    }
 }
 
 @media(min-width: 768px) {
@@ -471,10 +472,11 @@ nav {
 
     .site-logo img {
         width: 130px;
+        height: 97.5px;
     }
 
     nav {
-        padding: 60px 15px;
+        padding: 16px;
     }
 
     .header-content-link button {
