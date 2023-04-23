@@ -69,7 +69,6 @@ function scrollPage() {
         nextSection.style.transform = 'translateY(0px)';
     }
 
-    // console.log(scrollPos);
 }
 
 
