@@ -41,6 +41,13 @@
     font-weight: 200;
 }
 
+.contact-echipa {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(58 53 53);
+}
+
 /* Media Queries */
 
 @media(min-width: 560px) {
@@ -79,6 +86,10 @@
     .stefan-echipa img {
         width: 272px;
     }
+
+    h1.despre-name {
+        font-size: 50px;
+    }
 }
 
 @media(min-width: 990px) {
@@ -97,6 +108,7 @@
     .mircea-echipa {
         padding-right: 60px;
     }
+
 }
 @media(min-width: 1200px) {
     .despre-echipa h1 {
